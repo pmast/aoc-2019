@@ -59,6 +59,7 @@ function move(orientation, direction, steps, mark) {
     }
 }
 
+// only mark position within the grid
 function markPosition(x, y, mark) {
     if (x >= 0 && x < size && y >= 0 && y < size){
         if (matrix[y][x] && matrix[y][x] != mark)
